@@ -1,0 +1,21 @@
+body {
+  margin: 0
+}
+
+#steve-image {
+  padding-top: 10px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+#tag {
+  margin-top: 20px;
+  width: 200px;
+}
+
+.heading-small {
+  margin-top: 20px;
+  color: aqua;
+  font-size: 24px;
+  font-weight: bold;
+}
