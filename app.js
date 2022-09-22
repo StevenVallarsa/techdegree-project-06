@@ -22,19 +22,20 @@ app.get("/project/:projectId", (req, res, next) => {
   if (projects[projectId]) {
     res.render("project", { project: projects[projectId] });
   } else {
-    const err = new Error("That project does not exist");
+    const err = new Error();
     err.status = 404;
     next(err);
   }
 });
 
+// catch 404 errors
 app.use((req, res, next) => {
   const err = new Error("That path or file does not exist");
   err.status = 404;
-  // console.log(err.message);
   next(err);
 });
 
+// Print error and redirect to index
 app.use((err, req, res, next) => {
   console.log(`${err.message}:  ERROR ${err.status}`);
   res.redirect("/");
