@@ -2,48 +2,48 @@
   "projects": [
     {
       "id": 0,
-      "project_name": "Project 01 — Quote Generator",
+      "project_name": "Quote Generator",
       "description": "Wrote the JavaScript to randomly display a quote on a web page.",
       "technologies": ["VS Code", "Chrome"],
       "live_link": "https://stevenvallarsa.github.io/techdegree-project-01/",
       "github_link": "https://github.com/StevenVallarsa/techdegree-project-01",
-      "image_urls": []
+      "image_urls": ["static/images/01a.jpg"]
     },
     {
       "id": 1,
-      "project_name": "Project 02 — Data Pagination and Filtering",
+      "project_name": "Data Pagination and Filtering",
       "description": "This project involved coding the JavaScript to dynamically display content from the input of a search box.",
       "technologies": ["VS Code", "Chrome"],
       "live_link": "https://stevenvallarsa.github.io/techdegree-project-02/",
       "github_link": "https://github.com/StevenVallarsa/techdegree-project-02",
-      "image_urls": []
+      "image_urls": ["static/images/02a.jpg"]
     },
     {
       "id": 2,
-      "project_name": "Project 03 — Interactive Form",
+      "project_name": "Interactive Form",
       "description": "In JavaScript, coded the validation and dynamic display of the elements in an HTML form.",
       "technologies": ["VS Code", "Chrome"],
       "live_link": "https://stevenvallarsa.github.io/techdegree-project-04/",
       "github_link": "https://github.com/StevenVallarsa/techdegree-project-04",
-      "image_urls": []
+      "image_urls": ["static/images/03a.jpg", "static/images/03b.jpg"]
     },
     {
       "id": 3,
-      "project_name": "Project 04 — Phrase Guessing App",
-      "description": "Coded the JavaScript to allow for user interaction with the screen, dynamically displaying the guessed letters as well as the on-screen game board in real time. The app also kept track of your remaining lives and allows for creating a new round. ",
+      "project_name": "Phrase Guessing App",
+      "description": "Coded the JavaScript to allow for user interaction with the screen, dynamically displaying the guessed letters as well as the on-screen game board in real time. The app also kept track of your remaining lives and allows for creating a new round.",
       "technologies": ["VS Code", "Chrome"],
       "live_link": "https://stevenvallarsa.github.io/techdegree-project-04/",
       "github_link": "https://github.com/StevenVallarsa/techdegree-project-04",
-      "image_urls": []
+      "image_urls": ["static/images/04a.jpg", "static/images/04b.jpg", "static/images/04c.jpg"]
     },
     {
       "id": 4,
-      "project_name": "Project 05 — Public API Request",
-      "description": "",
+      "project_name": "Public API Request",
+      "description": "Created an employee directory by communicating with a third-party API to provide random images and copy. This page also includes search functionality.",
       "technologies": ["VS Code", "Chrome"],
       "live_link": "https://stevenvallarsa.github.io/techdegree-project-05/",
       "github_link": "https://github.com/StevenVallarsa/techdegree-project-05",
-      "image_urls": []
+      "image_urls": ["static/images/05a.jpg"]
     }
   ]
 }
