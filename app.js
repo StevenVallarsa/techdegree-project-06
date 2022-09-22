@@ -1,4 +1,5 @@
 const express = require("express");
+const { render } = require("pug");
 const { projects } = require("./data.json");
 
 const app = express();
@@ -16,22 +17,27 @@ app.get("/about", (req, res) => {
   res.render("about");
 });
 
-app.get("/project/:projectId", (req, res) => {
+app.get("/project/:projectId", (req, res, next) => {
   let { projectId } = req.params;
-  res.render("project", { project: projects[projectId] });
+  if (projects[projectId]) {
+    res.render("project", { project: projects[projectId] });
+  } else {
+    const err = new Error("That project does not exist");
+    err.status = 404;
+    next(err);
+  }
 });
 
 app.use((req, res, next) => {
-  const err = new Error("Not Found");
+  const err = new Error("That path or file does not exist");
   err.status = 404;
-  console.log(err);
+  // console.log(err.message);
   next(err);
 });
 
 app.use((err, req, res, next) => {
-  res.locals.error = err;
-  console.log(err.message, err.status);
-  next();
+  console.log(`${err.message}:  ERROR ${err.status}`);
+  res.redirect("/");
 });
 
 app.listen(port, () => console.log(`This application is running on localhost:${port}`));
